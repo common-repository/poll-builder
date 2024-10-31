@@ -1,0 +1,35 @@
+.vote-result {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.ypl-hide {
+    display: none;
+}
+
+.ypl-meter {
+    height: 5px;
+    position: relative;
+    background: #f3efe6;
+    overflow: hidden;
+}
+
+.ypl-meter span {
+    display: block;
+    height: 100%;
+}
+
+.ypl-progress {
+    background-color: #e4c465;
+    animation: ypl-progressBar 3s ease-in-out;
+    animation-fill-mode:both;
+}
+
+.poll-content {
+    display: inline-block;
+}
+
+@keyframes ypl-progressBar {
+    0% { width: 0; }
+    100% { width: 100%; }
+}

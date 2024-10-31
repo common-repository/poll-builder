@@ -1,0 +1,215 @@
+.ypl-delete-checkbox {
+	margin-left: 8px !important;
+}
+
+.select2-container {
+	width: 1900px !important;
+	max-width: 100% !important;
+	display: inline-block !important;
+}
+
+.ypl-hide,
+.ypl-hide-content {
+	display: none;
+}
+
+.ypl-sub-options label {
+	font-weight: normal !important;
+	padding-left: 40px;
+}
+
+/*Options builder start*/
+.current-option-wrapper {
+	border: 1px solid #CCCCCC;
+	max-width: 600px;
+}
+
+.current-option-header {
+	border-bottom: 1px solid #CCCCCC;
+	cursor: pointer;
+}
+
+.current-option-settings,
+.current-option-header {
+	padding: 15px;
+}
+
+.current-option-wrapper * {
+	margin: 0;
+}
+
+.current-option-info-p {
+	display: inline-block;
+}
+
+.ypl-handlediv {
+	float: none !important;
+	display: inline-block !important;
+	vertical-align: top;
+	height: auto !important;
+}
+
+.ypl-handlediv .toggle-indicator:before {
+	margin-top: 0 !important;
+}
+
+.current-option-wrapper {
+	margin-bottom: 10px;
+}
+
+.ypl-cursor {
+	cursor: pointer !important;
+}
+/*Options builder end*/
+
+/*Checkbox slider start*/
+/* The switch - the box around the slider */
+.ypl-switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.ypl-switch input {display:none;}
+
+/* The slider */
+.ypl-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	transform: scale(0.8, 0.8);
+}
+
+.ypl-slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .ypl-slider {
+	background-color: #2196F3;
+}
+
+input:focus + .ypl-slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .ypl-slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.ypl-slider.ypl-round {
+	border-radius: 34px;
+}
+
+.ypl-slider.ypl-round:before {
+	border-radius: 50%;
+}
+/*Checkbox slider end*/
+
+/*Copy to clipboard*/
+
+.ypl-tooltip {
+	position: relative;
+}
+
+.ypl-tooltip .ypl-tooltiptext {
+	visibility: hidden;
+	width: 140px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -75px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.ypl-tooltip .ypl-tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+.ypl-tooltip:hover .ypl-tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+/*Copy to clipboard*/
+
+.ypl-rotate-180 {
+	transform: rotate(180deg);
+}
+
+.ypl-support-button-red {
+	border: 2px solid #e74c3c;
+	color: #e74c3c;
+	border-radius: 5px;
+	cursor: pointer !important;
+	padding: 5px 25px 5px 26px;
+	text-transform: uppercase;
+	font-weight: 600;
+	outline: 0;
+	transition: background-color .2s ease-out;
+	text-decoration: none;
+	margin: 5px auto;
+	background: white;
+}
+
+.ypl-support-button-red:hover {
+	background-color: #e74c3c;
+	color: #ffffff;
+}
+
+.ypl-child-options-wrapper div:only-child .ypl-trash-wrapper {
+	display: none;
+}
+.ypl-add-new-button,
+.ypl-trash {
+	cursor: pointer;
+}
+
+.ypl-button-content {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	line-height: 1;
+}
+
+.ypl-button-content.dashicons-plus:before {
+	left: 0;
+	content: "\f132";
+	position: absolute;
+	top: 2px;
+}
+
+.ypl-bootstrap-wrapper .btn-primary {
+	line-height: 1 !important;
+}
